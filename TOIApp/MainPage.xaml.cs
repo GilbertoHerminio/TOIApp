@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 
     private void OnfncCalcular(object sender, EventArgs e)
     {
-        lstrResultado.Text = (Convert.ToInt32(lintNumero1.Text)
+         lstrResultado.Text = (Convert.ToInt32(lintNumero1.Text)
                             + Convert.ToInt32(lintNumero2.Text))
                             .ToString();
     }
