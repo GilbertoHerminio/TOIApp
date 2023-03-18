@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOIApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="10,0"
+            VerticalOptions="Center">
+
+            
+            
+            <!-- Desativar Imagem
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            -->
+            
+            
+            <!-- Título -->
+            <Label
+                Text="TOI DIGITAL"
+                TextColor="BlueViolet"                
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="55"
+                HorizontalOptions="Center" />
+
+            
+            <!-- Caixa 1 -->
+            <Label
+                Text="Informe 1º Numero"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Bem Vindo a TOI DIGITAL..."
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Entry 
+               x:Name="lintNumero1"
+               Keyboard="Numeric"
+               MaxLength="6"                
+               BackgroundColor="BlueViolet"
+               PlaceholderColor="White"
+               Placeholder="Informe 1º Numero..."                   
+            />
+
+
+
+            <!-- Caixa 2 -->
+            <Label
+                Text="Informe 2º Numero"
+                SemanticProperties.HeadingLevel="Level3"               
+                SemanticProperties.Description="Bem Vindo a TOI DIGITAL..."
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            <Entry
+               x:Name="lintNumero2"
+               Keyboard="Numeric"
+               MaxLength="6"
+               BackgroundColor="BlueViolet"
+               PlaceholderColor="White"
+               Placeholder="Informe 2º Numero..."                   
+            />
+
+
+
+            <!-- Botão para acionar o método -->
+            <Button
+                x:Name="btnCalcular"
+                Text="Calcular"
+                SemanticProperties.Hint="Pressione aqui para Calcular..."
+                Clicked="OnfncCalcular"
+                HorizontalOptions="Center" />
+
+
+            
+            
+            <!-- Caixa de Resultado -->
+            <Label
+                x:Name="lstrResultado"                
+                Text="0"
+                BackgroundColor="Green"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level4"
+                SemanticProperties.Description="Bem Vindo a TOI DIGITAL..."
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+
+            
+            
+
+            <!-- Botão para acionar outra Tela  : Sobre  -->
+            <Button
+                x:Name="btnSobre"
+                Text="Ir para Página Sobre"
+                SemanticProperties.Hint="Pressione aqui para Mudar de Tela..."
+                Clicked="OnfncFrmSobre"
+                HorizontalOptions="Center" />
+
+            <!-- Botão para acionar outra Tela  : Ajuda  -->
+            <Button
+                x:Name="btnAjuda"
+                Text="Ir para Página de Ajuda"
+                SemanticProperties.Hint="Pressione aqui para Mudar de Tela..."
+                Clicked="OnfncFrmAjuda"
+                HorizontalOptions="Center" />
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
