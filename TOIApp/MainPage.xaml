@@ -9,8 +9,8 @@
             Padding="10,0"
             VerticalOptions="Center">
 
-            
-            
+
+
             <!-- Desativar Imagem
             <Image
                 Source="dotnet_bot.png"
@@ -22,7 +22,7 @@
             
             <!-- Título -->
             <Label
-                Text="TOI DIGITAL"
+                Text="AbuseeUse"
                 TextColor="BlueViolet"                
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="55"
@@ -109,6 +109,13 @@
                 Clicked="OnfncFrmAjuda"
                 HorizontalOptions="Center" />
 
+            <!-- Botão para acionar outra Tela  : Tabela Fipe -->
+            <Button
+                x:Name="btnTabelaFipe"
+                Text="Ir para Página de Tabela Fipe"
+                SemanticProperties.Hint="Pressione aqui para Mudar de Tela..."
+                Clicked="OnfncFrmTabelaFipe"
+                HorizontalOptions="Center" />
 
 
 
