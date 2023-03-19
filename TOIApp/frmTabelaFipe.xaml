@@ -3,29 +3,137 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TOIApp.frmTabelaFipe"
              Title="Tabela Fipe">
-    
-    
+
+
     <VerticalStackLayout
-        Spacing="15"
-            Padding="1,0"
-            VerticalOptions="Center">
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center">
 
 
         <Label 
             Text="Consultar Valores"
-            FontSize="Title"
-            HorizontalTextAlignment="Start"
-            HorizontalOptions="Center" />     
+            FontSize="Title"            
+            HorizontalOptions="Center" 
+            TextColor="Green"
+            FontAttributes="Bold"
+            SemanticProperties.HeadingLevel="Level1"
+        />
+
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       
+        <!-- Combo de Tipo de Veiculos-->
+        <Label 
+            Text="Tipo de Veículo"
+            FontSize="18"            
+            HorizontalOptions="Center" 
+            TextColor="Blue"
+            FontAttributes="Bold"
+            SemanticProperties.HeadingLevel="Level2"
+        />        
+        <Picker
+            x:Name="cmbTipoVeiculo"
+            Title="Selecione o Tipo de Veiculo"
+            HorizontalOptions="Center"
+            FontSize="15"
+            BackgroundColor="AliceBlue"
+            
+        > 
+        </Picker>
+
+
+        <!-- Combo de Fabricante-->
+        <Label 
+            Text="Fabricante"
+            FontSize="18"            
+            HorizontalOptions="Center" 
+            TextColor="Blue"
+            FontAttributes="Bold"
+            SemanticProperties.HeadingLevel="Level3"
+        />
+        <Picker
+            x:Name="cmbFabricante"
+            Title="Selecione o Fabricante"
+            HorizontalOptions="Center"
+            FontSize="15"
+            BackgroundColor="AliceBlue"
+           
+        >
+        </Picker>
+
+        <!-- Combo de Modelo -->
+        <Label 
+            Text="Modelo"
+            FontSize="18"            
+            HorizontalOptions="Center" 
+            TextColor="Blue"
+            FontAttributes="Bold"
+            SemanticProperties.HeadingLevel="Level4"
+        />
+        <Picker
+            x:Name="cmbModelo"
+            Title="Selecione o Modelo"
+            HorizontalOptions="Center"
+            FontSize="15"
+            BackgroundColor="AliceBlue"
+           
+        >
+        </Picker>
+
+        <!-- Combo de Ano -->
+        <Label 
+            Text="Ano"
+            FontSize="18"            
+            HorizontalOptions="Center" 
+            TextColor="Blue"
+            FontAttributes="Bold"
+            SemanticProperties.HeadingLevel="Level5"
+        />
+        <Picker
+            x:Name="cmbAno"
+            Title="Selecione o Ano"
+            HorizontalOptions="Center"
+            FontSize="15"
+            BackgroundColor="AliceBlue"
+            
+        >
+        </Picker>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Botão que era toda a ação de pesquisa -->
+        <Button
+            x:Name="btnPesquisarTabelaFipe"
+            Text="Pesquisar Valor R$"
+            FontAttributes="Bold"
+            FontSize="18"
+            Clicked="OnFncCalcularTabelaFipe"
+            HorizontalOptions="Center"
+            BackgroundColor="Green"
+        />
+
+        <Label
+            x:Name="lstrValor"
+            Text="R$ 0,00"            
+            TextColor="Blue" 
+            SemanticProperties.HeadingLevel="Level9"
+            FontSize="20"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+          />
+
+
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>
