@@ -25,10 +25,10 @@ namespace TOIApp.Util
             {
                 HttpResponseMessage oResposta = await lobjCliente.GetAsync(lstrUrl).ConfigureAwait(false);
                 oResposta.EnsureSuccessStatusCode();                
-                return (string)await oResposta.Content.ReadAsStringAsync();
+               // return (string)await oResposta.Content.ReadAsStringAsync();
 
-               // string lstrRetorno = await oResposta.Content.ReadAsStringAsync();
-               // return lstrRetorno;
+                string lstrRetorno = await oResposta.Content.ReadAsStringAsync();
+                return lstrRetorno;
 
 
             }

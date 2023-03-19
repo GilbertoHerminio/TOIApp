@@ -33,11 +33,11 @@
         />        
         <Picker
             x:Name="cmbTipoVeiculo"
-            Title="Selecione o Tipo de Veiculo"
+            Title="Selecione um Tipo de Veiculo"
             HorizontalOptions="Center"
             FontSize="15"
             BackgroundColor="AliceBlue"
-            
+            SelectedIndexChanged="fncSelecionarTipo"            
         > 
         </Picker>
 
